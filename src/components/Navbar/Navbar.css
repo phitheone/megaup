@@ -1,0 +1,537 @@
+.NavSuper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  /* color: wheat; */
+  /* background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); */
+  width: 100%;
+
+  /* position: fixed; */
+  overflow: hidden;
+  top: 0;
+  z-index: 20;
+}
+
+.NavContainerOver {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: solid 4px #f47c00;
+  height: 80px;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.NavContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  padding: 0%;
+  background: linear-gradient(to bottom, #636363, black);
+
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.Logo {
+  /* border: 1px solid rgb(253, 2, 2); */
+}
+
+.Logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.Links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  height: 100%;
+  padding: 0px;
+  /* border: 1px solid rgb(47, 54, 255); */
+}
+
+.Links p {
+  cursor: pointer;
+  /* color: white; */
+  font-weight: bolder;
+}
+
+.Links p:hover {
+  cursor: pointer;
+  /* color: var(--color420); */
+}
+
+.BtnSocial2 {
+  height: 30px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #a0a0a0;
+  border-radius: 0.2rem;
+  margin: 5px;
+  box-shadow: 0 0 3px #636363;
+  background: linear-gradient(to bottom, white, rgb(230, 230, 230), white);
+}
+
+.BtnSocial2 p {
+  color: black;
+  font-weight: bolder;
+}
+
+.BtnSocial2 img {
+  width: 25px;
+  margin-right: 7px;
+}
+
+.BtnSocial {
+  height: 30px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #a0a0a0;
+  border-radius: 0.2rem;
+  margin: 5px;
+  box-shadow: 0 0 3px #636363;
+  background: linear-gradient(to bottom, white, rgb(230, 230, 230), white);
+}
+
+.BtnSocial:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(230, 230, 230),
+    white,
+    rgb(230, 230, 230)
+  );
+}
+
+.BtnSocial p {
+  color: black;
+  font-weight: bolder;
+}
+
+.BtnSocial img {
+  width: 25px;
+  margin-right: 7px;
+}
+
+.NavLink {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid 1px gray;
+  border-left: solid 1px gray;
+  color: white;
+}
+
+.NavLink:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgb(55, 55, 55),
+    rgb(0, 0, 0)
+  );
+  color: #f47c00;
+}
+
+.Socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin-right: 40px;
+
+  /* border: 1px solid greenyellow; */
+}
+
+.Socials img {
+  height: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.Socials a {
+  cursor: pointer;
+}
+
+.Socials img:hover {
+}
+
+.NavButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.NavBuyBtn img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.NavBuyBtnGray img {
+  height: 25px;
+  margin-right: 10px;
+  filter: grayscale();
+}
+
+.NavBuyBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--bg-main);
+  border: solid var(--text-main) 2px;
+  border-radius: 2rem;
+  padding: 10px 10px;
+  margin-right: 10px;
+  color: var(--text-main);
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.NavBuyBtnGray {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: lightgrey;
+  border: solid var(--text-main) 2px;
+  border-radius: 2rem;
+  padding: 10px 10px;
+  margin-right: 10px;
+  color: var(--text-main);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.NavBuyBtn:hover {
+  background: var(--bg-secondary);
+  border: solid var(--bg-main) 2px;
+  color: var(--bg-main);
+}
+
+.Movil {
+  position: absolute;
+  width: 0%;
+  min-width: 0px;
+  pointer-events: none;
+  opacity: 1;
+  right: 40px;
+
+  /* border: 1px solid rgb(255, 47, 217); */
+}
+
+.Movil img {
+  width: 0px;
+}
+
+.NavBtn {
+  background: none;
+  border: none;
+}
+
+/*=========== Media Queries ===========*/
+
+@media screen and (max-width: 1200px) {
+  .NavContainer {
+    width: 90%;
+    justify-content: space-between;
+
+    /* border: 1px solid greenyellow; */
+  }
+
+  .NavBuyBtn img {
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .NavBuyBtnGray {
+    font-size: 11px;
+    padding: 0px 20px;
+  }
+
+  .NavBuyBtn {
+    font-size: 11px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .NavSuper {
+    justify-content: left;
+  }
+
+  .NavContainer {
+    /* width: calc(50% + 50px); */
+    justify-content: space-between;
+  }
+
+  .Links {
+    pointer-events: none;
+    opacity: 0;
+    width: 0%;
+    min-width: 0px;
+    font-size: 0px;
+
+    /* border: 1px solid rgb(47, 54, 255); */
+  }
+
+  .Socials {
+    pointer-events: auto;
+    opacity: 1;
+    width: 95px;
+    min-width: 0px;
+
+    /* border: 1px solid greenyellow; */
+  }
+
+  .Socials img {
+    width: 0%;
+    pointer-events: none;
+  }
+
+  /* .MintBtn a {
+    opacity: 0;
+    pointer-events: none;
+  } */
+
+  .Movil {
+    position: absolute;
+    width: 40px;
+    pointer-events: auto;
+    opacity: 1;
+    right: 40px;
+
+    /* border: 1px solid rgb(255, 47, 217); */
+  }
+
+  .Movil img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .NavButtons {
+    flex-direction: column;
+  }
+
+  .NavBuyBtn {
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+
+  .MintBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+  }
+
+  .MintBtn p {
+    font-size: 12px;
+  }
+
+  .UBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+  }
+
+  .UBtn a {
+    padding: 0px 0px;
+    text-decoration: none;
+  }
+
+  .UBtn p {
+    font-size: 12px;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
+/*============Panel Movil============*/
+
+.NavPanel-Closed {
+  position: absolute;
+  top: 60px;
+  width: 95%;
+  background: var(--text-focus);
+  opacity: 0;
+  pointer-events: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.NavPanel-Closed p {
+  color: black;
+}
+
+.NavPanel-Open {
+  position: absolute;
+  top: 60px;
+  width: 95%;
+  background: var(--text-focus);
+  opacity: 0;
+  pointer-events: none;
+  border: solid 2px var(--bg-secondary);
+  border-radius: 10px;
+  /* box-shadow: inset 0 0 40px aqua, 0 0 40px aqua; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25% 0%;
+}
+
+.NavPanel-Open p {
+  color: var(--bg-secondary);
+}
+
+.NavPanel-Open p:hover {
+  color: white;
+  text-shadow: 0 0 7px aqua, 0 0 10px aqua, 0 0 21px aqua, 0 0 42px aqua;
+}
+
+@media screen and (max-width: 850px) {
+  .NavPanel-Closed {
+    position: absolute;
+    top: -60px;
+    width: 95%;
+    background: rgb(9, 53, 9);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .NavPanel-Open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.PanelLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 0%;
+  padding-bottom: 10%;
+}
+
+.PanelSocials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+
+/*================MEGA===============*/
+
+.HeroSuper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  background-image: url("../../images/back.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border-bottom: solid var(--text-main) 6px; */
+
+  /* border: solid red 1px; */
+}
+
+.Herocontainer {
+  top: 400px;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 70%;
+  height: 80vh;
+  /* z-index: 10; */
+  background-color: white;
+  border-radius: 0.5rem;
+
+  /* border: solid red 1px; */
+}
+
+.HeroBtnContainer a {
+  text-decoration: none;
+}
+.Herocontainer h1 {
+  color: grey;
+  font-size: 40px;
+  line-height: 63px;
+
+  /* text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0); */
+
+  /* border: solid red 1px; */
+}
+
+.Herocontainer span {
+  color: #6ccf1d;
+}
+
+.Herocontainer p {
+  color: var(--text-secondary);
+  text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.HeroBtnContainer {
+  display: flex;
+  flex-direction: row;
+
+  /* border: solid red 1px; */
+}
+
+.BtnMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 400px;
+  background: linear-gradient(to bottom, #fe6004, #fb851f, #fe6004);
+  border: solid 3px rgb(203, 123, 18);
+  border-radius: 0.5rem;
+  margin-bottom: 30px;
+}
+
+.BtnMain:hover {
+  background: linear-gradient(to bottom, #fb851f, #fe6004, #fb851f);
+}
+
+.BtnMain p {
+  color: white;
+  font-size: 30px;
+}
+
+.HeroBottom {
+}
+
+.HeroBottom img {
+  width: 100%;
+}

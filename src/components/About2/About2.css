@@ -1,0 +1,149 @@
+.A2Super {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../images/bg5.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.A2Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding: 100px 0%;
+}
+
+.A2Right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: justify;
+  flex: 1;
+}
+
+.A2Right p {
+  /* text-shadow: 0 0 5px rgb(255, 255, 255); */
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+}
+
+.A2Right span {
+  color: var(--color420);
+}
+
+.A2Right h1 {
+  color: white;
+  font-size: 52px;
+  text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    color: white;
+  }
+  50% {
+    color: var(--color420);
+  }
+}
+
+.A2Right h2 {
+  color: white;
+  margin: 0px;
+  padding: 0px 0px;
+  /* line-height: 20px; */
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: left;
+}
+
+.H2Span span {
+  color: var(--color420);
+}
+
+.A2Left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.A2Left img {
+  height: 500px;
+  animation: infinite linear 10s;
+  animation-name: jumpy;
+}
+
+@keyframes laugh {
+  0% {
+    transform: translateY(0px);
+  }
+  12.5% {
+    transform: translateY(0px);
+  }
+  33% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(-10px);
+  }
+  37% {
+    transform: translateY(0px);
+  }
+  39% {
+    transform: translateY(-10px);
+  }
+  41% {
+    transform: translateY(0px);
+  }
+  66% {
+    transform: translateY(0px);
+  }
+  68% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(0px);
+  }
+  72% {
+    transform: translateY(-10px);
+  }
+  74% {
+    transform: translateY(0px);
+  }
+}
+
+/*============Media Queries=============*/
+
+@media screen and (max-width: 1000px) {
+  .A2Container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .A2Container {
+    flex-direction: column-reverse;
+    padding: 30px 0%;
+  }
+
+  .A2Right h1 {
+    font-size: 24px;
+  }
+
+  .A2Left img {
+    width: 290px;
+    height: 290px;
+    padding-bottom: 2rem;
+  }
+}

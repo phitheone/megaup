@@ -1,0 +1,138 @@
+.FSuper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../images/bg2.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Fcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.FTitle {
+  padding: 40px 0px;
+}
+
+.FTitle h1 {
+  color: white;
+  font-size: 52px;
+  text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    color: white;
+  }
+  50% {
+    color: var(--color420);
+  }
+}
+
+.WrapOpen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(to right, var(--color420), white);
+  padding: 0px 20px;
+  /* cursor: pointer; */
+  cursor: pointer;
+  font-size: 11px;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+  color: var(--text-focus);
+  border-top: solid 3px var(--text-focus);
+}
+
+.WrapClosed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background: linear-gradient(to right, var(--bg-main), var(--bg-secondary)); */
+  background: var(--color420);
+  border-radius: 0.5rem;
+  padding: 0px 20px;
+  /* cursor: pointer; */
+  cursor: pointer;
+  /* border-top: solid 2px var(--text-focus); */
+  font-size: 9px;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+  color: black;
+}
+
+.WrapClosed:hover {
+  /* background: linear-gradient(to right, var(--bg-secondary), var(--bg-main)); */
+  background-color: black;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.ArrowOpen {
+  transition: 0.3s ease-in-out;
+  transform: rotate(45deg);
+  height: 30px;
+}
+
+.ArrowClosed {
+  transition: 0.3s ease-in-out;
+  height: 30px;
+}
+
+.DropOpen {
+  background: linear-gradient(to right, var(--color420), white);
+  width: 100%;
+  padding: 5px 20px;
+  max-height: 500px;
+  transition: 0.5s ease-in-out;
+  font-size: 20px;
+  /* cursor: pointer; */
+  cursor: pointer;
+  color: black;
+  margin-bottom: 10px;
+  border-bottom: solid 3px var(--text-focus);
+}
+
+.DropClosed {
+  background: rgb(26, 26, 26);
+  width: 100%;
+  padding: 5px 20px;
+  max-height: 0px;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  /* font-size: 0px; */
+}
+
+/*==============Media Queries===============*/
+
+@media screen and (max-width: 1000px) {
+  .Fcontainer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Wrap {
+    font-size: 8px;
+  }
+
+  .FTitle h1 {
+    font-size: 40px;
+  }
+}

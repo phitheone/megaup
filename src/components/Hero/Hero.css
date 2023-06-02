@@ -1,0 +1,217 @@
+.HeroSuper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  background-image: url("../../images/back.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border-bottom: solid var(--text-main) 6px; */
+
+  /* border: solid red 1px; */
+}
+
+.Herocontainer {
+  top: 400px;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 70%;
+  /* z-index: 10; */
+  background-color: white;
+  border-radius: 0.5rem;
+
+  /* border: solid red 1px; */
+}
+
+.HeroBtnContainer a {
+  text-decoration: none;
+}
+.Herocontainer h1 {
+  color: grey;
+  font-size: 60px;
+  line-height: 63px;
+  /* text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0); */
+
+  /* border: solid red 1px; */
+}
+
+.Herocontainer span {
+  color: #6ccf1d;
+}
+
+.Herocontainer p {
+  color: var(--text-secondary);
+  text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.HeroBtnContainer {
+  display: flex;
+  flex-direction: row;
+
+  /* border: solid red 1px; */
+}
+
+.BtnMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 400px;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 153, 20),
+    rgb(255, 201, 130),
+    rgb(255, 153, 20)
+  );
+  border: solid 3px rgb(203, 123, 18);
+  border-radius: 0.5rem;
+}
+
+.BtnMain p {
+  color: white;
+  font-size: 30px;
+}
+
+.HeroBtn img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.HeroBtnGray img {
+  height: 25px;
+  margin-right: 10px;
+  filter: grayscale();
+}
+
+.HeroBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, var(--color420), #3d7311);
+  border: solid black 1px;
+  border-radius: 0.5rem;
+  padding: 10px 10px;
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  height: 30px;
+  width: 120px;
+}
+
+.HeroBtnGray {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: lightgray;
+  border: solid var(--text-main) 2px;
+  border-radius: 2rem;
+  padding: 10px 10px;
+  margin-right: 10px;
+  color: var(--text-main);
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.HeroBtn:hover {
+  background: black;
+  border: solid var(--color420) 1px;
+  color: var(--color420);
+}
+
+.HeroBottom {
+}
+
+.HeroBottom img {
+  width: 100%;
+}
+
+/*============Media Queries==============*/
+
+@media screen and (max-width: 1200px) {
+  .HeroSuper {
+    background-size: auto 100%;
+  }
+
+  .Herocontainer {
+    padding: 1rem 0rem;
+  }
+
+  .Herocontainer img {
+    height: 200px;
+  }
+
+  .Herocontainer h1 {
+    color: var(--text-secondary);
+    font-size: 40px;
+    line-height: 42px;
+    text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  }
+
+  .HeroBtnContainer {
+    display: flex;
+    flex-direction: column;
+
+    /* border: solid red 1px; */
+  }
+
+  .HeroBtn img {
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .HeroBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 320px;
+    background: var(--bg-main);
+    border: solid var(--text-main) 2px;
+    border-radius: 2rem;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
+
+  .HeroBtnGray img {
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .HeroBtnGray {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 320px;
+    background: var(--bg-main);
+    border: solid var(--text-main) 2px;
+    border-radius: 2rem;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
+
+  .HeroBtn:hover {
+    background: var(--bg-secondary);
+    border: solid var(--bg-main) 2px;
+    color: var(--bg-main);
+  }
+}
