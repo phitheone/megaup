@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e0871278.css",
-    "main.js": "/static/js/main.b839ffc1.js",
-    "static/media/influencers.png": "/static/media/influencers.cd2b6dbedf3095ccc9fc.png",
+    "main.js": "/static/js/main.cd4971d9.js",
+    "static/media/influencers2.png": "/static/media/influencers2.55870c160bcdac6d71d4.png",
     "static/media/back.png": "/static/media/back.1c66cb9bca87be6bcebb.png",
     "static/media/tokenomics.png": "/static/media/tokenomics.2da122a350fa2fcb8041.png",
     "static/media/head.png": "/static/media/head.860e0d211c8bac443253.png",
@@ -13,10 +13,10 @@
     "static/media/twitter.svg": "/static/media/twitter.88145f5a5efc189af7c91e0ba0dede8e.svg",
     "static/media/flag.svg": "/static/media/flag.5aa2f382eb186965d0d01427f2b1c608.svg",
     "main.e0871278.css.map": "/static/css/main.e0871278.css.map",
-    "main.b839ffc1.js.map": "/static/js/main.b839ffc1.js.map"
+    "main.cd4971d9.js.map": "/static/js/main.cd4971d9.js.map"
   },
   "entrypoints": [
     "static/css/main.e0871278.css",
-    "static/js/main.b839ffc1.js"
+    "static/js/main.cd4971d9.js"
   ]
 }
